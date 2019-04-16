@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   	<link rel="stylesheet" type="text/css" href="./style.css">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>	
+	<nav class="navbar justify-content-center" id="nav">
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">JavaScript Calculator</a>
+		    </li>
+		  </ul>
+	</nav>
+
+	<div class="container" id="container">
+			<!-- screen --> 	
+				<div class="row">
+					<div class="col-sm-4"></div>
+					<div id="screen" class="col-sm-4"></div>
+					<div class="col-sm-4"></div>
+				</div>
+
+				<!-- button -->
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn-danger btn-circle1" onclick="onScreen()">ON</button>
+						<button class="btn-primary btn-circle" onclick="clearScreen('AC')">AC</button>
+						<button class="btn-warning btn-circle" onclick="operationPress('/')">/</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn-primary btn-circle" onclick="numberPress(7)">7</button>
+						<button class="btn-primary btn-circle" onclick="numberPress(8)">8</button>
+						<button class="btn-primary btn-circle" onclick="numberPress(9)">9</button>
+						<button class="btn-warning btn-circle" onclick="operationPress('*')">x</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn-primary btn-circle" onclick="numberPress(4)">4</button>
+						<button class="btn-primary btn-circle" onclick="numberPress(5)">5</button>
+						<button class="btn-primary btn-circle" onclick="numberPress(6)">6</button>
+						<button class="btn-warning btn-circle" onclick="operationPress('-')">-</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn-primary btn-circle" onclick="numberPress(1)">1</button>
+						<button class="btn-primary btn-circle" onclick="numberPress(2)">2</button>
+						<button class="btn-primary btn-circle" onclick="numberPress(3)">3</button>
+						<button class="btn-warning btn-circle" onclick="operationPress('+')">+</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn-primary btn-circle1" onclick="numberPress(0)">0</button>
+						<button class="btn-primary btn-circle" onclick="numberPress('.')">.</button>
+						<button class="btn-warning btn-circle" onclick="getResult()">=</button>
+					</div>
+				</div>
+
+				
+
+	</div>
+</body>
+</html>
